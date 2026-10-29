@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mt. Napulak - Landscapes</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+            color: #000000;
+        }
+
+        header, nav, footer {
+            text-align: center;
+            padding: 15px;
+            background: #ffffff;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        h1, h2, h3 {
+            color: #000000;
+        }
+
+        .gallery-container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .main-image {
+            width: 600px;
+            max-width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit, minmax(250px, 1fr)
+            );
+            gap: 15px;
+        }
+
+        .grid img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .grid img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Mt. Napulak Landscapes</h1>
+        <h3>The Iconic Mountain of Igbaras, Iloilo</h3>
+        <hr>
+    </header>
+
+    <!-- MENU -->
+    <nav>
+        <a href="index.html">HOME</a> |
+        <a href="landscapes.html">LANDSCAPES</a> |
+        <a href="gallery.html">GALLERY</a> |
+        <a href="about us.html">ABOUT US</a>
+        <hr>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="gallery-container">
+
+        <center>
+            <h2>Breathtaking Scenery &amp; Mountain Views</h2>
+
+            <!-- MAIN LANDSCAPE IMAGE -->
+            <img
+                src="nipol.jpg"
+                alt="Green mountain ranges and rocky summit of Mt. Napulak"
+                class="main-image"
+            >
+
+            <p style="max-width: 700px; text-align: justify;
+                      line-height: 1.6; margin: 20px auto;">
+                Mt. Napulak offers beautiful views of its rocky peak,
+                green hills, and wide mountain ranges. From the summit,
+                visitors can enjoy the amazing scenery of Igbaras and
+                the surrounding areas. The fresh air and peaceful
+                surroundings make it a wonderful place for hiking,
+                taking pictures, and enjoying nature.
+            </p>
+        </center>
+
+        <!-- MORE LANDSCAPE VIEWS -->
+        <div style="margin-top: 40px;">
+
+            <h3 style="text-align: center;">More Views</h3>
+
+            <div class="grid">
+
+                <div>
+                    <img src="ediwow.jpg"
+                         alt="Rocky summit of Mt. Napulak">
+                    <p style="text-align: center;">
+                        The Rocky Summit
+                    </p>
+                </div>
+
+                <div>
+                    <img src="wow.jpg"
+                         alt="Mountain trails and scenic views">
+                    <p style="text-align: center;">
+                        Mountain Trails and Views
+                    </p>
+                </div>
+
+                <div>
+                    <img src="cow.jpg"
+                         alt="Cow resting along a mountain trail">
+                    <p style="text-align: center;">
+                        Nature Along the Trail
+                    </p>
+                </div>
+
+                <div>
+                    <img src="bulaklak.jpg"
+                         alt="Wildflowers growing among mountain rocks">
+                    <p style="text-align: center;">
+                        Wildflowers and Rocky Landscapes
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <hr>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            Author: Cherry Ann Munez<br>
+            Year: 2026<br>
+            Place: Igbaras, Iloilo, Philippines
+        </p>
+
+        <p>
+            &copy; 2026 Mt. Napulak Tourism Website.
+            All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
